@@ -39,7 +39,7 @@ public class FileUploadServlet extends HttpServlet {
 		// checks if the request actually contains upload file
         if (!ServletFileUpload.isMultipartContent(request))
         {
-            writer.println("Request does not contain upload data");
+            writer.println("Request does not contains upload data");
             writer.flush();
             return;
         }
